@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Peminjaman Ruangan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="container-fluid bg-warning w-100 d-flex justify-content-between bg-warning align-items-center text-align-center p-3">
+    <div class="link">
+        <a href="index.html">Home</a>
+        <a href="fasilitas.html">Fasilitas</a>
+        <a href="detail.html">Detail Ruangan</a>
+        <a href="#">Berita</a>
+        <a href="#">Tentang Kami</a>
+    </div>
+    <div>
+        <div class="login-input d-flex text-align-center align-items-center"> 
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-primary me-3" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input class="form-control me-2" type="search" placeholder="Silahkan Cari" aria-label="Search">
+            </form>
+            <ul>
+                <li><a href="login-v2.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="row">
+<div class="awal-1 col-8 border border-primary border-bottom-0 border-top-0 d-flex">
+<div class="paragraf pt-3 ps-3 mt-3 pb-3">
+  <form>
+    <div class="form-group row">
+      <label for="NP" class="col-4 col-form-label">Nama Peminjaman :</label> 
+      <div class="col-8">
+        <input id="NP" name="NP" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="select" class="col-4 col-form-label">Select :</label> 
+      <div class="col-8">
+        <select id="select" name="select" class="custom-select">
+          <option value="AC">Aula Cendrawasih</option>
+          <option value="AZS">Aula Zeni Sudirman</option>
+          <option value="ACNN">Aula Cakrawala Nuansa Nirwana</option>
+          <option value="AKK">Aula Kebon kopi</option>
+          <option value="AN">Aula Nirwana</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="DR" class="col-4 col-form-label">Deskripsi Ruangan :</label> 
+      <div class="col-8">
+        <textarea id="DR" name="DR" cols="40" rows="" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-4">Fasilitas Ruangan</label> 
+      <div class="col-8">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="FR" id="FR_0" type="radio" class="custom-control-input" value="rabbit"> 
+          <label for="FR_0" class="custom-control-label">Sound System</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="FR" id="FR_1" type="radio" class="custom-control-input" value="duck"> 
+          <label for="FR_1" class="custom-control-label">Wifi</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="FR" id="FR_2" type="radio" class="custom-control-input" value="fish"> 
+          <label for="FR_2" class="custom-control-label">Layar Besar</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="FR" id="FR_3" type="radio" class="custom-control-input" value=""> 
+          <label for="FR_3" class="custom-control-label">Catering</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="text" class="col-4 col-form-label">Tanggal peminjaman :</label> 
+      <div class="col-8">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-calendar"></i>
+            </div>
+          </div> 
+          <input id="text" name="text" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="KP" class="col-4 col-form-label">Kontak Person :</label> 
+      <div class="col-8">
+        <input id="KP" name="KP" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="text1" class="col-4 col-form-label">No TLP/HP :</label> 
+      <div class="col-8">
+        <input id="text1" name="text1" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="text2" class="col-4 col-form-label">Email :</label> 
+      <div class="col-8">
+        <input id="text2" name="text2" type="text" class="form-control">
+      </div>
+    </div> 
+    <div class="form-group row">
+      <div class="offset-4 col-8">
+        <a href="index.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Submit</a>
+        <a href="isi_loker.html" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Reset</a>
+        <a href="aula.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Back</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+<div class="foto mt-4">
+  <div>
+    <a href="index.html">Home</a>
+    <i class="fa fa-chevron-right"></i>
+    <span>Detail Ruangan</span>
+  </div>
+  
+</div>
+</div>
+<div class="col-3 d-flex flex-column border border-primary border-top-0 ms-5">
+<aside class="link-article d-flex flex-column w-70 m-auto">
+<h3>Kategori Ruangan</h3>
+    <a href="detail.html">Aula</a>
+    <a href="peminjaman ruangan.html">Peminjaman Ruangan</a>
+    <a href="peminjaman.html">daftar peminjaman</a>
+    <a href="daftar ruangan.html">daftar_ruangan</a>
+  </aside>
+</div>
+</body>
+</html>

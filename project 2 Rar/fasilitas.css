@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.link a{
+    text-decoration: none;
+    margin: 0 18px;
+}
+.login-input ul, .login-input ul li a{
+    text-decoration: none;
+    margin-top: 10px;
+}
+.login-input ul li{
+    list-style-type: none;
+}
+nav{
+    max-width: 100%;
+}
+.paragraf{
+    width: 70%;
+}
+.foto img{
+    width: 200px;
+}
+
+.awal-1{
+    border-bottom: none !important;
+}
+div.col-3 a{
+    text-decoration: none;
+}
